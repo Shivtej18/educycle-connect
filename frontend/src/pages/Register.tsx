@@ -43,7 +43,7 @@ const Register = () => {
           <div className="text-center mb-8">
             <Link to="/" className="inline-flex items-center gap-2.5 mb-6">
               <div className="icon-container h-12 w-12">
-                <BookOpen className="h-6 w-6" />
+                <img src="/logo.svg" alt="EduCycle Logo" className="h-6 w-6" />
               </div>
             </Link>
             <h1 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">

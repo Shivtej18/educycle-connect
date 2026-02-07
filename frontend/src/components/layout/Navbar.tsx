@@ -23,7 +23,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5">
           <div className="icon-container h-9 w-9">
-            <BookOpen className="h-5 w-5" />
+            <img src="/logo.svg" alt="EduCycle Logo" className="h-5 w-5" />
           </div>
           <span className="font-display text-xl font-bold text-foreground">
             Edu<span className="text-primary">Cycle</span>

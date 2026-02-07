@@ -32,14 +32,14 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2.5 mb-4">
               <div className="icon-container h-9 w-9">
-                <BookOpen className="h-5 w-5" />
+                <img src="/logo.svg" alt="EduCycle Logo" className="h-5 w-5" />
               </div>
               <span className="font-display text-xl font-bold text-foreground">
                 Edu<span className="text-primary">Cycle</span>
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4 max-w-xs">
-              Connecting students through sustainable education resource sharing. 
+              Connecting students through sustainable education resource sharing.
               Donate, reuse, and recycle study materials.
             </p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
