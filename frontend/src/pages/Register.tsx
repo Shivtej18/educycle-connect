@@ -23,7 +23,7 @@ const Register = () => {
     name: "",
     email: "",
     password: "",
-    role: "student",
+    role: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -105,7 +105,11 @@ const Register = () => {
                   <Input
                     id="name"
                     type="text"
-                    placeholder={formData.role === "ngo" ? "Enter organization name" : "Enter your name"}
+                    placeholder={
+                      formData.role === "ngo"
+                        ? "Enter organization name"
+                        : "Enter your name"
+                    }
                     value={formData.name}
                     onChange={(e) => updateFormData("name", e.target.value)}
                     className="pl-10"
@@ -148,7 +152,9 @@ const Register = () => {
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
                     className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
-                    aria-label={showPassword ? "Hide password" : "Show password"}
+                    aria-label={
+                      showPassword ? "Hide password" : "Show password"
+                    }
                   >
                     {showPassword ? (
                       <EyeOff className="h-4 w-4" />
@@ -171,7 +177,10 @@ const Register = () => {
             <div className="mt-6 text-center">
               <p className="text-sm text-muted-foreground">
                 Already have an account?{" "}
-                <Link to="/login" className="text-primary font-medium hover:underline">
+                <Link
+                  to="/login"
+                  className="text-primary font-medium hover:underline"
+                >
                   Log in
                 </Link>
               </p>
